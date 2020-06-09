@@ -1,6 +1,6 @@
 package project1;
 
-public class City {
+public class City implements Comparable {
     private String state;
     private String name;
     private double latitude;
@@ -79,6 +79,15 @@ public class City {
                 ", name='" + name + '\'' +
                 ", latitude=" + latitude +
                 ", longitude=" + longitude +
+                ", temperature=" + temperature +
+                ", uvIndex=" + uvIndex +
+                ", isRaining=" + isRaining +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        City city = (City) o;
+        return ((Double) this.getTemperature() ).compareTo( city.getTemperature() );
     }
 }
