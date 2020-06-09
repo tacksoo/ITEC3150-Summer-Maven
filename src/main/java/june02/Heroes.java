@@ -23,17 +23,15 @@ public class Heroes {
                 break;
             }
         }
-        File f = new File("src/main/resources/heroes.txt");
         /*
         for(String name: heroes.keySet() ) {
             String line = name + ":" + heroes.get(name);
             FileUtils.writeStringToFile(f, line + "\n", "UTF-8", true);
         }
-        */
         for(Map.Entry<String,String> entry: heroes.entrySet()) {
             String line = entry.getKey() + ":" + entry.getValue();
             FileUtils.writeStringToFile(f, line + "\n", "UTF-8", true);
         }
-
+        */
     }
 }
