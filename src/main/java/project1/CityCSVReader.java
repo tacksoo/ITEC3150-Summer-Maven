@@ -12,6 +12,12 @@ public class CityCSVReader {
 
     public static final String STATES_CSV_URL = "https://gist.githubusercontent.com/tacksoo/07ec0e01122d02f30ef02b3a8418391f/raw/a78acee82835ac9af0b8595651102f16362d0c62/states.csv";
     public static final int NUM_OF_STATES = 50;
+
+    /**
+     * Allows you to get the csv file in an array (includes column header)
+     *
+     * @return array of string where each element is a line of the csv file
+     */
     public static String[] getLines() {
         String[] lines = null;
         try {
@@ -27,6 +33,11 @@ public class CityCSVReader {
         return lines;
     }
 
+    /**
+     * Get list of city objects for each American state
+     *
+     * @return list of City objects (50 elements as there are 50 states)
+     */
     public static List<City> getCities() {
         String[] lines = getLines();
         List<City> cities = new ArrayList<City>();

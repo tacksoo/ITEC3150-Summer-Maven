@@ -14,6 +14,11 @@ public class WeatherHelper {
     // e.g.  35,34,120.232
     public static final String DARKSKY_API_URL = "https://api.darksky.net/forecast/3c5084c558861c1610447b49a45f4eb4/";
 
+    /**
+     * Get JSON weather data for a given city
+     * @param city the city for which you want the weather data
+     * @return JSON string of weather data
+     */
     private static String getWeatherJSON(City city) {
         String json = "";
         try {
@@ -29,6 +34,11 @@ public class WeatherHelper {
         }
         return json;
     }
+
+    /**
+     * Sets weather information for a given city
+     * @param city city object for which you are setting the weather
+     */
     public static void setWeatherInfo(City city) {
         try {
             String json = getWeatherJSON(city);

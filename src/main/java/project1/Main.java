@@ -16,11 +16,11 @@ public class Main {
         City austin = null;
         City sacramento = null;
         for (int i = 0; i < cities.size(); i++) {
-            if ( cities.get(i).getState().equals( "Oregon")) {
+            if (cities.get(i).getState().equals("Oregon")) {
                 salem = cities.get(i);
-            } else if( cities.get(i).getState().equals("Texas")) {
+            } else if (cities.get(i).getState().equals("Texas")) {
                 austin = cities.get(i);
-            } else if( cities.get(i).getState().equals("California")) {
+            } else if (cities.get(i).getState().equals("California")) {
                 sacramento = cities.get(i);
             }
         }
@@ -47,8 +47,8 @@ public class Main {
         System.out.println(favCities);
         // please complete the following:
         // Display all the cities where it is currently raining. Also, display the total number of cities where it is currently raining.
+        /**/
 
     }
-
 
 }
