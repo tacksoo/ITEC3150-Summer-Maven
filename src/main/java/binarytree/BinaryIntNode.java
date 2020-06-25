@@ -6,6 +6,12 @@ public class BinaryIntNode {
     private BinaryIntNode leftChild;
     private BinaryIntNode rightChild;
 
+    public BinaryIntNode(int value) {
+        this.value = value;
+        this.leftChild = null;
+        this.rightChild = null;
+    }
+
     public BinaryIntNode(int value, BinaryIntNode leftChild, BinaryIntNode rightChild) {
         this.value = value;
         this.leftChild = leftChild;
