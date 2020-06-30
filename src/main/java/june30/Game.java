@@ -5,6 +5,7 @@ import java.util.Objects;
 
 public class Game implements Serializable {
 
+    private static final long serialVersionUID = 3830563397254888295L;
 
     private String title;
     private String system;
