@@ -1,8 +1,10 @@
 package june30;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Game {
+public class Game implements Serializable {
+
 
     private String title;
     private String system;
