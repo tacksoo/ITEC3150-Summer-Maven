@@ -10,10 +10,7 @@ public class Main {
         // store states in a map in alphabetic order
         TreeMap<String,String> americanStates = new TreeMap<String,String>();
 
-        List<String> stateNames = XMLReader.getTagContent("//state");
-        List<String> stateCapitals = XMLReader.getTagContent("//capital");
-        System.out.println(stateNames);
-        System.out.println(stateCapitals);
+
 
     }
 }
