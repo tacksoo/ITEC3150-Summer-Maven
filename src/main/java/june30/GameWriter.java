@@ -9,9 +9,9 @@ import java.util.List;
 public class GameWriter {
 
     public static void main(String[] args) throws Exception {
-        Game minecraft = new Game("Minecraft","PC","Microsoft","Casual",9.0,2010);
-        Game stardew = new Game("Stardew valley", "iOS", "ConcernedApe","Casual",8.0, 2018);
-        Game duke3d = new Game("Duke Nukem 3d", "PC", "Silverman","Shooter",10.0, 1991);
+        Game minecraft = new Game("Minecraft", "PC", "Microsoft", "Casual", 9.0, 2010);
+        Game stardew = new Game("Stardew valley", "iOS", "ConcernedApe", "Casual", 8.0, 2018);
+        Game duke3d = new Game("Duke Nukem 3d", "PC", "Silverman", "Shooter", 10.0, 1991);
 
         /*
         ObjectMapper mapper = new ObjectMapper();
@@ -44,7 +44,7 @@ public class GameWriter {
 
     public static void writeGamesToFile(List<Game> games) throws Exception {
         DataOutputStream dos = new DataOutputStream(new FileOutputStream("src/main/resources/games.dat"));
-        for(Game g: games) {
+        for (Game g : games) {
             dos.writeUTF(g.getTitle());
             dos.writeUTF(g.getSystem());
             dos.writeUTF(g.getDeveloper());
